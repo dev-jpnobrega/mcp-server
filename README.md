@@ -43,4 +43,4 @@ See the [contributing docs](CONTRIBUTING.md) for more information
 
 ## License
 
-[Apache-2.0](LICENSE)
+[MIT](LICENSE)
