@@ -12,7 +12,6 @@ export default class WeatherService {
                 ? new Date(Date.parse(param.startDate) + 60 * 60 * 1000).toISOString()
                 : new Date(Date.now() + 60 * 60 * 1000).toISOString();
             const apiUrl = `https://api.stormglass.io/v2/weather/point?lat=${param.lat}&lng=${param.lng}&params=${param?.param || 'waveHeight,airTemperature'}&start=${startDate}&end=${endDate}`;
-            //https://api.stormglass.io/v2/weather/point?lat=-23.488102&lng=-46.668186&params=waveHeight,airTemperature&start=2025-04-23T19:00:00&end=2025-04-23T21:00:00
             const response = await fetch(apiUrl, {
                 headers: {
                     Authorization: apiKey,

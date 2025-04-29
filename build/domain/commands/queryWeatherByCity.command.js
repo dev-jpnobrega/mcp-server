@@ -9,7 +9,6 @@ class QueryWeatherByCityCommand extends BaseCommand {
     }
     async execute(param) {
         const { city } = param;
-        console.log('Executing QueryWeatherByCityCommand', param);
         const cities = await this.cityService.getCity(city);
         if (cities.length === 0) {
             return {

@@ -3,13 +3,40 @@
 A Domain-Driven MCP server that provides real-time weather information for Brazilian cities. Designed with SOLID principles, it leverages dependency injection and separates domain logic from infrastructure services to ensure scalability, maintainability, and testability.
 [Model Context Protocol concept](https://docs.mcp.so/)
 
-# Installation
+## Installation
 
 Use the package manager [npm](https://www.npmjs.com/) to install MCP server.
 
 ```bash
 npm install
 ```
+
+## Unit Tests
+
+Use the [JEST](https://jestjs.io/) to unit tests.
+
+```bash
+npm run test
+```
+
+## Building
+
+To build the application.
+
+```bash
+npm run build
+```
+
+## Running DEV with @modelcontextprotocol/inpector
+
+- Docs infos in [link](https://modelcontextprotocol.io/docs/tools/inspector)
+- Running dev.
+
+```bash
+npm run start:dev
+```
+
+![alt text](image-1.png)
 
 ## Simple use with Claude Desktop APP
 
